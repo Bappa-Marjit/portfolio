@@ -20,4 +20,11 @@ app.get('/contact', (req,res)=>{
 });
 app.get('/about',(req,res)=>{
     res.render("about.ejs");
-})
+});
+
+app.get('/login',(req,res)=>{
+    res.render('login.ejs');
+});
+app.get('/logout',(req,res)=>{
+    res.render('logout.ejs');
+});
